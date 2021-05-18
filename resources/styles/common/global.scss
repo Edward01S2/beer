@@ -119,3 +119,7 @@ a {
     @apply text-xl font-rec text-white;
   }
 }
+
+.mapsvg {
+  @apply overflow-visible #{!important};
+}
