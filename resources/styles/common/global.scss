@@ -123,3 +123,7 @@ a {
 .mapsvg {
   @apply overflow-visible #{!important};
 }
+
+#lottie-0 path {
+  @apply fill-current stroke-current text-c-red-100;
+}

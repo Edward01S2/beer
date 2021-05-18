@@ -154,8 +154,14 @@ $(document).ready(() => {
   $('#grid-3').hover(function() {
     lottie3.setDirection(1);
     lottie3.play();
+    gsap.to('#lottie-3 path', {
+      color: "white",
+    });
   }, function() {
     lottie3.stop();
+    gsap.to('#lottie-3 path', {
+      color: "#C65956",
+    });
   });
 
   let lottie0 = Lottie.loadAnimation({
@@ -169,8 +175,14 @@ $(document).ready(() => {
   $('#grid-0').hover(function() {
     lottie0.setDirection(1);
     lottie0.play();
+    gsap.to('#lottie-0 path', {
+      color: "white",
+    });
   }, function() {
     lottie0.stop();
+    gsap.to('#lottie-0 path', {
+      color: "#C65956",
+    });
   });
 
   let lottie1 = Lottie.loadAnimation({
@@ -184,8 +196,14 @@ $(document).ready(() => {
   $('#grid-1').hover(function() {
     lottie1.setDirection(1);
     lottie1.play();
+    gsap.to('#lottie-1 path', {
+      color: "white",
+    });
   }, function() {
     lottie1.stop();
+    gsap.to('#lottie-1 path', {
+      color: "#C65956",
+    });
   });
 
   let lottie2 = Lottie.loadAnimation({
@@ -199,8 +217,14 @@ $(document).ready(() => {
   $('#grid-2').hover(function() {
     lottie2.setDirection(1);
     lottie2.play();
+    gsap.to('#lottie-2 path', {
+      color: "white",
+    });
   }, function() {
     lottie2.stop();
+    gsap.to('#lottie-2 path', {
+      color: "#C65956",
+    });
   });
 
   let lottie4 = Lottie.loadAnimation({
@@ -214,8 +238,14 @@ $(document).ready(() => {
   $('#grid-4').hover(function() {
     lottie4.setDirection(1);
     lottie4.play();
+    gsap.to('#lottie-4 path', {
+      color: "white",
+    });
   }, function() {
     lottie4.stop();
+    gsap.to('#lottie-4 path', {
+      color: "#C65956",
+    });
   });
 
   let lottie5 = Lottie.loadAnimation({
@@ -229,8 +259,14 @@ $(document).ready(() => {
   $('#grid-5').hover(function() {
     lottie5.setDirection(1);
     lottie5.play();
+    gsap.to('#lottie-5 path', {
+      color: "white",
+    });
   }, function() {
     lottie5.stop();
+    gsap.to('#lottie-5 path', {
+      color: "#C65956",
+    });
   });
 
   let lottie6 = Lottie.loadAnimation({
@@ -244,8 +280,14 @@ $(document).ready(() => {
   $('#grid-6').hover(function() {
     lottie6.setDirection(1);
     lottie6.play();
+    gsap.to('#lottie-6 path', {
+      color: "white",
+    });
   }, function() {
     lottie6.stop();
+    gsap.to('#lottie-6 path', {
+      color: "#C65956",
+    });
   });
 
   let lottie7 = Lottie.loadAnimation({
@@ -259,8 +301,14 @@ $(document).ready(() => {
   $('#grid-7').hover(function() {
     lottie7.setDirection(1);
     lottie7.play();
+    gsap.to('#lottie-7 path', {
+      color: "white",
+    });
   }, function() {
     lottie7.stop();
+    gsap.to('#lottie-7 path', {
+      color: "#C65956",
+    });
   });
 
   
