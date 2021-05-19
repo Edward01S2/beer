@@ -1,4 +1,17 @@
 <div class="{{ $block->classes }}" x-data="{open: true}">
+  <div class="bg-c-red-100" x-show="!open" x-cloak>
+    <div class="container px-6 mx-auto lg:px-8">
+      <div class="flex items-center justify-between py-4 xl:py-5">
+        <div class="text-lg leading-tight text-white font-rec xl:text-xl">{!! $title !!}</div>
+        <button class="inline-flex items-center text-sm text-white hover:text-c-blue-100 xl:text-base focus:outline-none" @click="open = true">
+          <span class="hidden mr-2 lg:block">Open</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
   <div class="overflow-hidden bg-c-red-100" x-show="open">
     <div class="container relative flex flex-col mx-auto sm:flex-row sm:py-8 md:py-12 md:items-center">
       <div class="relative z-30 sm:w-1/3 md:w-1/2">
@@ -24,7 +37,7 @@
           <p class="sm:text-sm xl:text-base">{!! $content !!}</p>
         </div>
       </div>
-      <button class="absolute top-0 right-0 z-40 inline-flex items-center mt-10 -mr-6 text-sm text-white transform rotate-90 lg:mr-4 lg:mt-12 hover:text-c-blue-100" @click="open = false">
+      <button class="absolute top-0 right-0 z-40 inline-flex items-center mt-10 -mr-6 text-sm text-white transform rotate-90 lg:mr-4 lg:mt-12 hover:text-c-blue-100 focus:outline-none" @click="open = false">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>

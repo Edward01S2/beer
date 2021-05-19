@@ -125,7 +125,13 @@ a {
 }
 
 #lottie-0 path, #lottie-1 path, #lottie-2 path, #lottie-3 path, #lottie-4 path, #lottie-5 path, #lottie-6 path, #lottie-7 path {
-  @apply fill-current stroke-current text-c-red-100;
+  @apply fill-current stroke-current text-c-red-100 opacity-100;
+}
+
+#grid-6 {
+  .icon-container {
+    @apply md:h-24 md:w-24 md:mb-8;
+  }
 }
 
 .beer-width {
