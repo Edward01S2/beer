@@ -28,7 +28,7 @@ $(document).ready(() => {
 
   ScrollTrigger.create({
     trigger: '#beeris',
-    start: 'top 70%',
+    start: 'top 80%',
     end: 'bottom 20%',
     //markers: true,
     onEnter: function() {
