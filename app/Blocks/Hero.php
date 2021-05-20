@@ -137,6 +137,7 @@ class Hero extends Block
     public function with()
     {
         return [
+            'open' => (get_field('open')) ? 'true' : 'false',
             'title' => get_field('title'),
             'content' => get_field('content'),
             'image' => get_field('image'),
@@ -153,6 +154,7 @@ class Hero extends Block
         $hero = new FieldsBuilder('hero');
 
         $hero
+            ->addTrueFalse('open')
             ->addText('title')
             ->addTextarea('content')
             ->addImage('image');

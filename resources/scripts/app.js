@@ -53,6 +53,34 @@ $(document).ready(() => {
 
     }
   });
+
+  gsap.fromTo("#hero-img", {
+    autoAlpha: 0,
+      y: 25,
+    }, {
+    scrollTrigger: {
+      trigger: '#hero-img',
+      start: "0 75%",
+      //markers: true,
+    },
+    autoAlpha: 1,
+    y: 0,
+    duration: 1,
+  });
+
+  // gsap.fromTo('#hero-img', {
+  //   autoAlpha: 0,
+  //   y: 25,
+  // }, 
+  // scrollTrigger: {
+  //   trigger: '#hero-img',
+  //   start: "0 75%",
+  //   //markers: true,
+  // }, {
+  //   autoAlpha: 1,
+  //   y: 0,
+  //   duration: 1,
+  // });
    
 
   const studySwiper = new Swiper('.study-swiper', {
