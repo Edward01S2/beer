@@ -6,9 +6,9 @@
         <div class="mb-4 text-4xl font-bold leading-none font-rec text-c-blue-100 lg:text-5xl xl:text-6xl xl:mb-8">{!! $title !!}</div>
         <p class="text-c-blue-100 sm:text-sm xl:text-base xl:max-w-lg">{!! $content !!}</p>
       </div>
-      <div class="sm:w-1/2 lg:max-w-sm xl:max-w-lg">
+      <div class="sm:w-1/2 lg:max-w-sm xl:max-w-none">
         <div>
-          <iframe class="w-full min-h-[350px] -mt-1" src="{!! $iframe !!}" frameborder="0" scrolling="no"></iframe>
+          <iframe class="w-full min-h-[485px] -mt-1" src="{!! $iframe !!}" frameborder="0" scrolling="no"></iframe>
         </div>
       </div>
     </div>
